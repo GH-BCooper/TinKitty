@@ -1,3 +1,4 @@
+/* Animated Background */
 .gradient-background {
   background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
   background-size: 180% 180%;
@@ -5,33 +6,42 @@
   border-radius: 20px;
 }
 
+/* Gradient Animation */
 @keyframes gradient-animation {
+
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
+
 }
 
+/* Reusable Icon Container */
 .icon-square {
   width: 3rem;
   height: 3rem;
   border-radius: 0.75rem;
 }
 
+/* Profile Image Styling */
 .profile-img {
   height: 100px;
   border-radius: 50%;
 }
 
+/* Page Background */
 body {
   background-color: rgb(246, 216, 180);
 }
 
+/* Navbar Container Background */
 .mycontainer {
   background-color: rgb(243, 248, 212);
 }
