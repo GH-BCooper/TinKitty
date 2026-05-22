@@ -2,14 +2,21 @@
 <html lang="en">
 
 <head>
+
+  <!-- Page Setup -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TinKitty</title>
+
+  <!-- External Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <style>
+
+  /* Button Styling */
   .btn-primary {
     color: rgb(34, 34, 34);
     display: flex;
@@ -17,497 +24,527 @@
     align-items: center;
     gap: 8px;
   }
+
   .btn-outline-secondary {
     display: flex;
     gap: 8px;
   }
+
+  /* Card Styling */
   .card-cover {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.cat {
-  border-radius: 100%;
-}
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .cat {
+    border-radius: 100%;
+  }
 
 </style>
 
 <body>
+
+  <!-- Navbar -->
   <div class="mycontainer">
-  <header class="d-flex align-items-center justify-content-between px-4 py-3 mb-4 border-bottom">
 
-  <!-- Logo -->
-  <div class="d-flex align-items-center">
-    <img src="./assets/images/catlogo.png!sw800" width="40" height="40" class="me-2">
-    <span class="fw-bold fs-5">TinKitty</span>
+    <header class="d-flex align-items-center justify-content-between px-4 py-3 mb-4 border-bottom">
+
+      <div class="d-flex align-items-center">
+        <img src="./assets/images/catlogo.png!sw800" width="40" height="40" class="me-2">
+        <span class="fw-bold fs-5">TinKitty</span>
+      </div>
+
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link px-2">Home</a></li>
+        <li class="nav-item"><a class="nav-link px-2">Features</a></li>
+        <li class="nav-item"><a class="nav-link px-2">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link px-2">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link px-2">About</a></li>
+      </ul>
+
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-primary">Login</button>
+        <button class="btn btn-primary">Sign-up</button>
+      </div>
+
+    </header>
+
   </div>
 
-  <!-- Nav -->
-  <ul class="nav justify-content-center">
-    <li class="nav-item"><a class="nav-link px-2">Home</a></li>
-    <li class="nav-item"><a class="nav-link px-2">Features</a></li>
-    <li class="nav-item"><a class="nav-link px-2">Pricing</a></li>
-    <li class="nav-item"><a class="nav-link px-2">FAQs</a></li>
-    <li class="nav-item"><a class="nav-link px-2">About</a></li>
-  </ul>
-
-  <!-- Buttons -->
-  <div class="d-flex gap-2">
-    <button class="btn btn-outline-primary">Login</button>
-    <button class="btn btn-primary">Sign-up</button>
-  </div>
-
-</header>
-
-</div>
-
-
-  <!-- Title -->
+  <!-- Hero Section -->
   <section id="title">
-    <div class="container my-5 gradient-background" >
-  <div class="row p-4  pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
 
-    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-      <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
-        Where Cats Find Their Purr-fect Match
+    <div class="container my-5 gradient-background">
+
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
+            Where Cats Find Their Purr-fect Match
+          </h1>
+
+          <p class="lead">
+            No awkward small talk. No bad vibes.
+            Just whiskers, vibes, and mutual tail flicks.
+          </p>
+
+          <!-- Download Buttons -->
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+
+            <button
+              type="button"
+              class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
+            >
+              <img src="./assets/images/apple.svg" alt="apple">
+              Download
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-lg px-4"
+            >
+              <img src="./assets/images/google-play.svg" alt="google-play">
+              Download
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- Hero Image -->
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg d-flex justify-content-center align-items-center">
+
+          <img
+            class="rounded-lg-3 img-fluid"
+            src="./assets/images/cat2.webp"
+            alt="cat2"
+          >
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+
+    <div class="container px-4 py-5" id="custom-cards">
+
+      <h2 class="pb-2 border-bottom">Downtown of Kitties</h2>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+        <!-- Feature Card 1 -->
+        <div class="col">
+
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('./assets/images/sleepingcat.webp');"
+          >
+
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                🐱 The Chill Napper
+              </h3>
+
+              <ul class="d-flex list-unstyled mt-auto">
+
+                <li class="me-auto">
+                  <img
+                    src="./assets/images/sleepingcat.webp"
+                    alt="Sleeping Cat"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  >
+                </li>
+
+                <li class="d-flex align-items-center me-3">
+                  <small>Visakhapatnam</small>
+                </li>
+
+                <li class="d-flex align-items-center">
+                  <small>3d</small>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="col">
+
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('./assets/images/sassycat.jpg');"
+          >
+
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                😼 The Sass Master
+              </h3>
+
+              <ul class="d-flex list-unstyled mt-auto">
+
+                <li class="me-auto">
+                  <img
+                    src="./assets/images/sassycat.jpg"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  >
+                </li>
+
+                <li class="d-flex align-items-center me-3">
+                  <small>Hyderabad</small>
+                </li>
+
+                <li class="d-flex align-items-center">
+                  <small>4d</small>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="col">
+
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('./assets/images/sigmacat.jpg');"
+          >
+
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                😼 The Sigma
+              </h3>
+
+              <ul class="d-flex list-unstyled mt-auto">
+
+                <li class="me-auto">
+                  <img
+                    src="./assets/images/sigmacat.jpg"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  >
+                </li>
+
+                <li class="d-flex align-items-center me-3">
+                  <small>Kerala</small>
+                </li>
+
+                <li class="d-flex align-items-center">
+                  <small>5d</small>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Testimonial Section -->
+  <section id="testimonial">
+
+    <!-- Main Testimonial -->
+    <div class="p-5 text-center bg-body-tertiary">
+
+      <div class="container py-5">
+
+        <h2 class="text-body-emphasis">Found my purr-fect match!</h2>
+
+        <img class="cat mt-4" src="./assets/images/cat.jpg" height="50" alt="cat">
+
+        <p class="lead mt-3 mx-auto" style="max-width: 700px;">
+          Downtown of Kitties is where calm meets charm. Every visit feels like a soft pause in a busy day — cozy vibes, adorable personalities, and pure comfort. If relaxation had a mascot, it would definitely be a cat from here.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- Brand Logos -->
+    <div class="container">
+
+      <div class="container mb-5">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-sm-12">
+            <img src="./assets/images/mashable.png" alt="mashable" height="50px">
+          </div>
+
+          <div class="col-lg-3 col-sm-12">
+            <img src="./assets/images/bizinsider.png" alt="Busines Insider" height="50px">
+          </div>
+
+          <div class="col-lg-3 col-sm-12">
+            <img src="./assets/images/techcrunch.png" alt="techcrunch" height="50px">
+          </div>
+
+          <div class="col-lg-3 col-sm-12">
+            <img src="./assets/images/tnw.png" alt="tnw" height="50px">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <hr/>
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+
+    <!-- Pricing Header -->
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+
+      <h1 class="display-4 fw-normal text-body-emphasis">
+        Pricing for Unlimited swipes, zero hiss
       </h1>
 
-      <p class="lead">
-        No awkward small talk. No bad vibes.
-        Just whiskers, vibes, and mutual tail flicks.
+      <p class="fs-5 text-body-secondary">
+        🐱 Free Meow |💕 Purr Premium |👑 Whisker Elite |😻 Paw-some Plus |🔥 Catnip Pro |💎 Meow Match Max |🌟 Feline VIP |🐾 Purrfect Pass |
       </p>
 
-      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-        <button
-          type="button"
-          class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
-        >
-          <img src="./assets/images/apple.svg" alt="apple">
-          Download
-        </button>
-
-        <button
-          type="button"
-          class="btn btn-outline-secondary btn-lg px-4"
-        >
-          <img src="./assets/images/google-play.svg" alt="google-play">
-          Download
-        </button>
-      </div>
     </div>
 
-    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg d-flex justify-content-center align-items-center">
-  <img
-    class="rounded-lg-3 img-fluid"
-    src="./assets/images/cat2.webp"
-    alt="cat2"
-  >
-</div>
-
-
-  </div>
-</div>
-
-  </section>
-  <!-- Features -->
-  <section id="features">
-    <div class="container px-4 py-5" id="custom-cards">
-  <h2 class="pb-2 border-bottom">Downtown of Kitties </h2>
-
-  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-
-    <div class="col">
-      <div
-        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-        style="background-image: url('./assets/images/sleepingcat.webp');"
-      >
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-            🐱 The Chill Napper
-          </h3>
-
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img
-                src="./assets/images/sleepingcat.webp"
-                alt="Sleeping Cat"
-                width="32"
-                height="32"
-                class="rounded-circle border border-white"
-              >
-            </li>
-
-            <li class="d-flex align-items-center me-3">
-              <svg
-                class="bi me-2"
-                width="1em"
-                height="1em"
-                role="img"
-                aria-label="Location"
-              >
-                <use xlink:href="#geo-fill"></use>
-              </svg>
-              <small>Visakhapatnam</small>
-            </li>
-
-            <li class="d-flex align-items-center">
-              <svg
-                class="bi me-2"
-                width="1em"
-                height="1em"
-                role="img"
-                aria-label="Duration"
-              >
-                <use xlink:href="#calendar3"></use>
-              </svg>
-              <small>3d</small>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div
-        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-        style="background-image: url('./assets/images/sassycat.jpg');"
-      >
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-            😼 The Sass Master
-          </h3>
-
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img
-                src="./assets/images/sassycat.jpg"
-                alt="Bootstrap"
-                width="32"
-                height="32"
-                class="rounded-circle border border-white"
-              >
-            </li>
-
-            <li class="d-flex align-items-center me-3">
-              <svg
-                class="bi me-2"
-                width="1em"
-                height="1em"
-                role="img"
-                aria-label="Location"
-              >
-                <use xlink:href="#geo-fill"></use>
-              </svg>
-              <small>Hyderabad</small>
-            </li>
-
-            <li class="d-flex align-items-center">
-              <svg
-                class="bi me-2"
-                width="1em"
-                height="1em"
-                role="img"
-                aria-label="Duration"
-              >
-                <use xlink:href="#calendar3"></use>
-              </svg>
-              <small>4d</small>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div
-        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-        style="background-image: url('./assets/images/sigmacat.jpg');"
-      >
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-            😼 The Sigma 
-          </h3>
-
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img
-                src="./assets/images/sigmacat.jpg"
-                alt="Bootstrap"
-                width="32"
-                height="32"
-                class="rounded-circle border border-white"
-              >
-            </li>
-
-            <li class="d-flex align-items-center me-3">
-              <svg
-                class="bi me-2"
-                width="1em"
-                height="1em"
-                role="img"
-                aria-label="Location"
-              >
-                <use xlink:href="#geo-fill"></use>
-              </svg>
-              <small>Kerala </small>
-            </li>
-
-            <li class="d-flex align-items-center">
-              <svg
-                class="bi me-2"
-                width="1em"
-                height="1em"
-                role="img"
-                aria-label="Duration"
-              >
-                <use xlink:href="#calendar3"></use>
-              </svg>
-              <small>5d</small>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- Testimonial -->
-<section id="testimonial">
-  <div class="p-5 text-center bg-body-tertiary">
-    <div class="container py-5">
-      <!-- Short testimonial line -->
-      <h2 class="text-body-emphasis">Found my purr-fect match!</h2>
-      
-      <!-- Cat image -->
-      <img class="cat mt-4" src="./assets/images/cat.jpg" height="50" alt="cat">
-      
-      <!-- Longer testimonial -->
-      <p class="lead mt-3 mx-auto" style="max-width: 700px;">
-        Downtown of Kitties is where calm meets charm. Every visit feels like a soft pause in a busy day — cozy vibes, adorable personalities, and pure comfort. If relaxation had a mascot, it would definitely be a cat from here.
-      </p>
-    </div>
-  </div>
-  <div class="container">
-    <div class="container mb-5">
-      <div class="row">
-
-        <div class="col-lg-3 col-sm-12">
-          <img src="./assets/images/mashable.png" alt="mashable" height="50px">
-        </div>
-        <div class="col-lg-3 col-sm-12">
-          <img src="./assets/images/bizinsider.png" alt="Busines Insider" height="50px">
-        </div>
-        <div class="col-lg-3 col-sm-12">
-          <img src="./assets/images/techcrunch.png" alt="techcrunch" height="50px">
-        </div>
-        <div class="col-lg-3 col-sm-12">
-          <img src="./assets/images/tnw.png" alt="tnw" height="50px">
-        </div>
-      
-      </div>
-    </div>
-  </div>
-</section>
-<hr/>
-
-  <!-- Pricing -->
-  <section id="pricing">
-    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-  <h1 class="display-4 fw-normal text-body-emphasis">Pricing for Unlimited swipes, zero hiss</h1>
-
-  <p class="fs-5 text-body-secondary">
-    🐱 Free Meow |💕 Purr Premium |👑 Whisker Elite |😻 Paw-some Plus |🔥 Catnip Pro |💎 Meow Match Max |🌟 Feline VIP |🐾 Purrfect Pass |
-  </p>
-</div>
-
+    <!-- Pricing Cards -->
     <div class="container">
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
 
-  <div class="col">
-    <div class="card mb-4 rounded-3 shadow-sm">
-      <div class="card-header py-3">
-        <h4 class="my-0 fw-normal">Purrfect</h4>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+        <!-- Free Plan -->
+        <div class="col">
+
+          <div class="card mb-4 rounded-3 shadow-sm">
+
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Purrfect</h4>
+            </div>
+
+            <div class="card-body">
+
+              <h1 class="card-title pricing-card-title">
+                $0
+                <small class="text-body-secondary fw-light">/mo</small>
+              </h1>
+
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Limited daily swipes</li>
+                <li>Basic cat profiles only</li>
+                <li>Ads</li>
+                <li>Standard matching speed</li>
+                <li>Community support</li>
+              </ul>
+
+              <button
+                type="button"
+                class="w-100 btn btn-lg btn-outline-primary"
+              >
+                Sign up for free
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="col">
+
+          <div class="card mb-4 rounded-3 shadow-sm">
+
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Whisker Pro</h4>
+            </div>
+
+            <div class="card-body">
+
+              <h1 class="card-title pricing-card-title">
+                $15
+                <small class="text-body-secondary fw-light">/mo</small>
+              </h1>
+
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Unlimited swipes</li>
+                <li>Advanced filters</li>
+                <li>No ads</li>
+                <li>Faster matches</li>
+                <li>Priority email support</li>
+              </ul>
+
+              <button
+                type="button"
+                class="w-100 btn btn-lg btn-primary"
+              >
+                Get started
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="col">
+
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Feline Elite</h4>
+            </div>
+
+            <div class="card-body">
+
+              <h1 class="card-title pricing-card-title">
+                $29
+                <small class="text-body-secondary fw-light">/mo</small>
+              </h1>
+
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Everything in Whisker Pro</li>
+                <li>Profile boost</li>
+                <li>See who liked you</li>
+                <li>Read receipts</li>
+                <li>VIP support</li>
+                <li>Exclusive elite-only cats</li>
+              </ul>
+
+              <button
+                type="button"
+                class="w-100 btn btn-lg btn-primary"
+              >
+                Contact us
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">
-          $0
-          <small class="text-body-secondary fw-light">/mo</small>
-        </h1>
-
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Limited daily swipes 
-          <li>Basic cat profiles only</li>
-          <li>Ads</li>
-          <li>Standard matching speed</li>
-          <li>Community support</li>
-        </ul>
-
-        <button
-          type="button"
-          class="w-100 btn btn-lg btn-outline-primary"
-        >
-          Sign up for free
-        </button>
-      </div>
     </div>
-  </div>
-
-  <div class="col">
-    <div class="card mb-4 rounded-3 shadow-sm">
-      <div class="card-header py-3">
-        <h4 class="my-0 fw-normal">Whisker Pro</h4>
-      </div>
-
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">
-          $15
-          <small class="text-body-secondary fw-light">/mo</small>
-        </h1>
-
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Unlimited swipes 
-          <li>Advanced filters</li> 
-          <li>No ads</li> 
-          <li>Faster matches </li>
-          <li>Priority email support </li>
-        </ul>
-
-        <button
-          type="button"
-          class="w-100 btn btn-lg btn-primary"
-        >
-          Get started
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card mb-4 rounded-3 shadow-sm border-primary">
-      <div class="card-header py-3 text-bg-primary border-primary">
-        <h4 class="my-0 fw-normal">Feline Elite</h4>
-      </div>
-
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">
-          $29
-          <small class="text-body-secondary fw-light">/mo</small>
-        </h1>
-
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Everything in Whisker Pro</li>
-          <li>Profile boost</li>
-          <li>See who liked you</li>
-          <li>Read receipts</li>
-          <li>VIP support</li>
-          <li>Exclusive elite-only cats</li> 
-        </ul>
-
-        <button
-          type="button"
-          class="w-100 btn btn-lg btn-primary"
-        >
-          Contact us
-        </button>
-      </div>
-    </div>
-  </div>
-
-</div>
-</div>
 
   </section>
+
   <!-- Footer -->
   <section id="footer" class="container gradient-background">
+
     <div>
-  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
 
-    <div class="col mb-3">
-      <a
-        href="/"
-        class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
-        aria-label="Bootstrap"
-      >
-        <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-      </a>
-      <p class="text-body-secondary">© TinKitty</p>
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+
+        <!-- Footer Branding -->
+        <div class="col mb-3">
+
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+            aria-label="Bootstrap"
+          >
+
+            <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+
+          </a>
+
+          <p class="text-body-secondary">© TinKitty</p>
+
+        </div>
+
+        <div class="col mb-3"></div>
+
+        <!-- Footer Links -->
+        <div class="col mb-3">
+
+          <h5>Section</h5>
+
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+
+        </div>
+
+        <!-- Footer Links -->
+        <div class="col mb-3">
+
+          <h5>Section</h5>
+
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+
+        </div>
+
+        <!-- Footer Links -->
+        <div class="col mb-3">
+
+          <h5>Section</h5>
+
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+
+        </div>
+
+      </footer>
+
     </div>
-
-    <div class="col mb-3"></div>
-
-    <div class="col mb-3">
-      <h5>Section</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="col mb-3">
-      <h5>Section</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="col mb-3">
-      <h5>Section</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-        </li>
-      </ul>
-    </div>
-
-  </footer>
-</div>
 
   </section>
 
+  <!-- Bootstrap Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
